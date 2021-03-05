@@ -15,7 +15,7 @@ header {
   height: 100vh;
 
   background:
-    url("/Users/yu-chuanhsieh/Documents/GitHub/koko-web-programming/assignment-02/imgs/wallpaper_triangle.jpg"),
+    url("imgs/wallpaper_triangle.jpg"),
     transparent;
 
   text-align: center;
