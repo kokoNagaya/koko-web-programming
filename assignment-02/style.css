@@ -1,0 +1,61 @@
+html {
+  font-size: 20px;
+  font-family: 'ff-tisa-web-pro', serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f3f2ee;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  background:
+    url("/Users/yu-chuanhsieh/Documents/GitHub/koko-web-programming/assignment-02/imgs/wallpaper_triangle.jpg"),
+    transparent;
+
+  text-align: center;
+  font-family: 'ff-tisa-sans-web-pro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  color: #98a5ad;
+  width: 700px;
+  padding: 2px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+h1 {
+  color: #284161;
+  font-size: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+h2 {
+  color: #284161;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: -10px;
+  font-size: 40px;
+}
+
+h3 {
+  color: #284161;
+  font-size: 30px;
+}
+
+h4 {
+  color: #7e90a8;
+  font-size: 20px;
+  font-family: 'ff-tisa-sans-web-pro', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
