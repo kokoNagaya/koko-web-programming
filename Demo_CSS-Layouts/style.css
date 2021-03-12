@@ -1,7 +1,7 @@
 html {
   background-color: white;
   font-family: 'Georgia', 'Times New Roman', serif;
-h  margin: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -36,15 +36,12 @@ h  margin: 0;
 
 article {
     flex: 1;
-
-    /* this is the one line that changes in the media query! */
     flex-basis: 50%;
-
-    /* in box-sizing: border-box, padding is counted as part of the width, but margin is not. That's why I'm using padding instead of margins to space the articles apart out. If I used margin instead, the margins will make the area each article takes up 56% (50% + 3% margin on either side) instead. And because our sections are 100vw wide, 56% + 56% will make the row of articles 112% total, so the flex-wrap would kick the right side article to the next line since it won't fit.  */
     padding: 3%;
-    width: 50%;
     display: flex;
     flex-direction: row;
+    padding: 0;
+    margin-top: 50px;
     flex-wrap: wrap;
 }
 
@@ -52,6 +49,8 @@ article {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
 }
 
 .article-img {
@@ -60,7 +59,7 @@ article {
   display: flex;
   background-size: cover;
   background-position: center;
-  width: 50%;
+  width: 100%;
 }
 
 img {
