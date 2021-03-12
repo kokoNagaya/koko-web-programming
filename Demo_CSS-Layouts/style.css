@@ -1,85 +1,108 @@
-/* general styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+html {
+  background-color: white;
+  font-family: 'Georgia', 'Times New Roman', serif;
+h  margin: 0;
+  padding: 0;
 }
 
-section {
-    border: 2px solid black;
-    margin-bottom: 50px;
-    padding: 10px 0;
-    width: 100vw;
+.title {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-div {
-    width: 25%;
-    height: 300px;
-    background: pink;
-    border: 2px solid magenta;
+.title-text {
+  color: white;
 }
 
-p {
-    background: lightgreen;
+.title-container {
+  height: 500px;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 
-/* inline-block */
-.inline-block div {
-    display: inline-block;
+.title-image-container {
+  height: 500px;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
 }
 
-.inline-block p {
-    display: inline-block;
-    width: 25%;
-}
-
-/* floats */
-.float div {
-    float: left;
-    height: 50px;
-}
-
-
-
-/* position */
-.position {
-    position: relative;
-}
-
-/* .position div {
-    position: absolute;
-    background: blue;
-} */
-
-.position .second {
-    left: 25%;
-}
-
-/* .second p {
-    position: absolute;
-    top: 50%;
-} */
-
-/* flexbox */
-.flex-container {
-    display: flex;
-    width: 100%;
-}
-
-.flex-container * {
+article {
     flex: 1;
+
+    /* this is the one line that changes in the media query! */
+    flex-basis: 50%;
+
+    /* in box-sizing: border-box, padding is counted as part of the width, but margin is not. That's why I'm using padding instead of margins to space the articles apart out. If I used margin instead, the margins will make the area each article takes up 56% (50% + 3% margin on either side) instead. And because our sections are 100vw wide, 56% + 56% will make the row of articles 112% total, so the flex-wrap would kick the right side article to the next line since it won't fit.  */
+    padding: 3%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-
-/* CSS Grid */
-.grid-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 10% 25% 33%;
-    background: none;
-    border: none;
+.articles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.grid-container div {
-    width: 100%;
+.article-img {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.article-text h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.summary {
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.dept {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.author {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.date {
+   display: inline-block;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
+}
+
+.dept {
+    color: red;
+    text-transform: uppercase;
+}
+
+.author {
+    font-weight: 700;
+    margin-right: 15px;
 }
