@@ -1,0 +1,28 @@
+body {
+    width: 100vw;
+    background-color: black;
+    color: blue;
+    font-size: 48px;
+}
+
+div {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    animation: test 2s linear alternate infinite;
+}
+
+@keyframes test {
+    0% {
+        color: blue;
+        transform: skew(-15deg, 15deg) rotate(45deg) scale(2) scale(1);
+    }
+
+    100% {
+        color: red;
+        transform: skew(-15deg, 15deg) rotate(45deg) scale(2) scale(4) translateY(100);
+    }
+}
