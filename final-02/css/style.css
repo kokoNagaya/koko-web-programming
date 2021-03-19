@@ -1,13 +1,28 @@
 html {
 background-color:  #a9957b;
-font-family: monospace, serif;
+}
+
+h1 {
+  font-family: 'louvette-display', serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: 'quasimoda', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
 }
 
 .title {
   display: block;
   width: 50%;
-  margin-left: auto;
-  margin-right: 450px;
+  margin: auto;
+  padding: 3%;
 }
 
 #Layer_1 {
@@ -21,17 +36,64 @@ a:hover {
 
 @keyframes bounce {
   0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 
   40% {
-    -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 
   80% {
-    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
+}
+
+article {
+    flex: 1;
+    flex-basis: 50%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.food {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.food-info-container {
+  height: 500px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding-left: 50px;
+  margin: auto;
+}
+
+.food-image-container {
+  height: 500px;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+img {
+  align-items: baseline;
+  justify-content: center;
+  margin-left: 50px;
+  margin-top: 100px;
 }
