@@ -3,22 +3,11 @@ background-color:  #a9957b;
 font-family: monospace, serif;
 }
 
-h1 {
-  display: block;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: 400px;
-}
-
 .title {
   display: block;
   width: 50%;
   margin-left: auto;
   margin-right: 450px;
-}
-
-img {
-  height: 100%;
 }
 
 #Layer_1 {
