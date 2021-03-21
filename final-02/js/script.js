@@ -1,9 +1,5 @@
-$("document").ready(function() {
+console.log ("testing")
 
-    $("#serif").click(makeSerif);
-
-    $("#sans-serif").click(makeSans);
-
-    $("#monospace").click(makeMono);
-
+$("body").mousemove(function(event) {
+  $("#taiwan").css({"left" : event.pageX, "top" : event.pageY});
 });
